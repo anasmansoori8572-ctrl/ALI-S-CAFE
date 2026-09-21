@@ -1,0 +1,6 @@
+{
+  "name": "Barista - Modern Coffee Shop & Café",
+  "description": "Barista coffee shop & café website featuring freshly brewed roasts, coffee gear roastery shop, and gallery showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
