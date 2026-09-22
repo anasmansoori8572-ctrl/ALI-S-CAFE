@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { RippedPaperDivider } from './RippedPaperDivider';
 import { Coffee, Award, Heart, Sparkles, MapPin, ArrowRight } from 'lucide-react';
 import { PageView } from '../types';
+import { getRandomStoredImage } from '../data/baristaData';
 
 interface AboutPageProps {
   onNavigate: (view: PageView) => void;
@@ -19,7 +20,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           backgroundAttachment: 'fixed',
         }}
       >
-        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-black/30" />
         
         <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.p
@@ -37,7 +38,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-oswald text-5xl sm:text-7xl font-bold tracking-[0.06em] text-white uppercase mb-4"
           >
-            ABOUT BARISTA
+            ABOUT ALI'S CAFE
           </motion.h1>
 
           <motion.div
@@ -77,7 +78,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="lg:col-span-6 relative">
             <div className="relative z-10 overflow-hidden shadow-2xl border-4 border-white/60">
               <img
-                src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/home-1-blog-f-img-2.jpg"
+                src={getRandomStoredImage()}
                 alt="Roasting artisanal coffee"
                 className="w-full h-[420px] sm:h-[480px] object-cover hover:scale-105 transition-transform duration-700"
               />
@@ -111,7 +112,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             </p>
 
             <p className="font-sans text-sm sm:text-base text-[#444] leading-relaxed mb-6">
-              Barista was founded with a singular aspiration: to create a sanctuary where the art of coffee can be celebrated without rush or compromise. From the lush mountainsides of Yirgacheffe to high-altitude estates in Huila, Colombia, we collaborate directly with growers who share our reverence for quality and biodiversity.
+              Ali's Cafe was founded with a singular aspiration: to create a sanctuary where the art of coffee can be celebrated without rush or compromise. From the lush mountainsides of Yirgacheffe to high-altitude estates in Huila, Colombia, we collaborate directly with growers who share our reverence for quality and biodiversity.
             </p>
 
             <p className="font-sans text-sm sm:text-base text-[#444] leading-relaxed mb-8">
@@ -240,7 +241,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <div className="group bg-[#111111] border border-[#262626] overflow-hidden">
               <div className="h-80 overflow-hidden relative">
                 <img
-                  src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/home-1-gallery-2.jpg"
+                  src={getRandomStoredImage()}
                   alt="Julian Rossi"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95"
                 />
@@ -263,7 +264,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <div className="group bg-[#111111] border border-[#262626] overflow-hidden">
               <div className="h-80 overflow-hidden relative">
                 <img
-                  src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/home-1-gallery-3.jpg"
+                  src={getRandomStoredImage()}
                   alt="Elena Vance"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95"
                 />
@@ -286,7 +287,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <div className="group bg-[#111111] border border-[#262626] overflow-hidden">
               <div className="h-80 overflow-hidden relative">
                 <img
-                  src="https://barista.qodeinteractive.com/elementor/wp-content/uploads/2017/01/home-1-gallery-5.jpg"
+                  src={getRandomStoredImage()}
                   alt="Marcus Thorne"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-95"
                 />

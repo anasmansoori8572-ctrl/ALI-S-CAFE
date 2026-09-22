@@ -80,10 +80,9 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
             className="w-full h-full object-cover object-center"
           />
         )}
-        {/* Authentic Barista dark gradient overlays for typography contrast */}
-        <div className="absolute inset-0 bg-black/45 pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/60 pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-transparent to-black/45 pointer-events-none" />
+        {/* Subtle dark gradient overlay for optimal video visibility and typography contrast */}
+        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none" />
       </div>
 
       {/* Main Slide Content: Centered Real Barista Layout */}
@@ -107,7 +106,7 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
               >
                 <img
                   src={currentSlide.emblem}
-                  alt="Coffee Shop Emblem"
+                  alt="Ali's Cafe Logo"
                   className="w-28 sm:w-32 md:w-36 lg:w-40 h-auto object-contain mx-auto filter drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]"
                 />
               </motion.div>

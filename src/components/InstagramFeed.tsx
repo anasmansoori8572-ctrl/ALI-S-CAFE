@@ -19,7 +19,7 @@ export const InstagramFeed: React.FC = () => {
             <div className="absolute inset-0 bg-[#141414]/75 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-4">
               <Instagram className="w-6 h-6 text-[#c7a17a] mb-2" />
               <span className="font-oswald text-xs tracking-[0.2em] text-white uppercase">
-                @BARISTA_COFFEE
+                @ALIS_CAFE
               </span>
             </div>
           </div>

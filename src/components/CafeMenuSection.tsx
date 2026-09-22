@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CAFE_MENU_ITEMS } from '../data/baristaData';
+import { CAFE_MENU_ITEMS, getRandomStoredImage } from '../data/baristaData';
 
 export const CafeMenuSection: React.FC = () => {
   const [filterCategory, setFilterCategory] = useState<'all' | 'hot' | 'iced'>('all');
@@ -82,7 +82,7 @@ export const CafeMenuSection: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   onError={(e) => {
                     const target = e.currentTarget as HTMLImageElement;
-                    target.src = 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=200&auto=format&fit=crop';
+                    target.src = getRandomStoredImage();
                   }}
                 />
               </div>

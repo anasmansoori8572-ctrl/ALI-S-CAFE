@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({
             >
               <img
                 src="https://aliscafe.in/loyalty/images/aliscafe.png"
-                alt="Barista Logo"
+                alt="Ali's Cafe Logo"
                 className="h-16 sm:h-20 md:h-24 w-auto object-contain transition-transform group-hover:scale-105 drop-shadow-md"
               />
             </div>

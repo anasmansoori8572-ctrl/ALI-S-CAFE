@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GALLERY_ITEMS } from '../data/baristaData';
+import { GALLERY_ITEMS, getRandomStoredImage } from '../data/baristaData';
 import { GalleryItem } from '../types';
 import { Maximize2, Grid, LayoutGrid, Columns, ArrowLeft, Coffee, Sparkles } from 'lucide-react';
 
@@ -26,12 +26,12 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
       {/* Hero Page Banner matching Barista theme header banner */}
       <div className="relative py-20 bg-[#0e0e0e] overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-25"
+          className="absolute inset-0 bg-cover bg-center opacity-65"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1920&auto=format&fit=crop')`
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-[#141414]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-[#141414]" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Breadcrumbs matching Barista elementor demo */}
@@ -41,7 +41,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
               className="hover:text-[#c7a17a] transition-colors flex items-center space-x-1"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
-              <span>BARISTA HOME</span>
+              <span>ALI'S CAFE HOME</span>
             </button>
             <span className="text-[#555]">/</span>
             <span className="text-[#a0a0a0]">PORTFOLIO</span>
@@ -56,7 +56,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
           <div className="w-16 h-[2px] bg-[#c7a17a] mx-auto mb-4" />
 
           <p className="font-merriweather italic text-sm sm:text-base text-[#c7a17a] max-w-xl mx-auto">
-            "A visual tribute to the heritage, roasting craft, and social sanctuary of Barista Coffee."
+            "A visual tribute to the heritage, roasting craft, and social sanctuary of Ali's Cafe."
           </p>
 
           {/* Owner Notice Badge */}
@@ -150,7 +150,7 @@ export const GalleryPage: React.FC<GalleryPageProps> = ({
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   onError={(e) => {
                     const target = e.currentTarget as HTMLImageElement;
-                    target.src = 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop';
+                    target.src = getRandomStoredImage();
                   }}
                 />
 

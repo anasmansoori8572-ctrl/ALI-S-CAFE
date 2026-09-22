@@ -44,15 +44,15 @@ export const BannerParallax: React.FC<BannerParallaxProps> = ({ onExploreShop })
         )}
       </div>
       
-      {/* Dark overlay */}
-      <div className="absolute inset-0 z-0 bg-black/75 backdrop-blur-[1px]" />
+      {/* Light transparent overlay for high video visibility */}
+      <div className="absolute inset-0 z-0 bg-black/35" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         {/* Emblem */}
         <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mx-auto mb-6 rounded-full border border-[#c7a17a]/60 flex items-center justify-center p-3 bg-[#141414]/90 shadow-2xl backdrop-blur-sm">
           <img
             src="https://aliscafe.in/loyalty/images/aliscafe.png"
-            alt="Barista Logo"
+            alt="Ali's Cafe Logo"
             className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain drop-shadow"
           />
         </div>

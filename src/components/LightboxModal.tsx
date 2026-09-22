@@ -97,7 +97,7 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
 
             <div className="flex items-center space-x-2 text-xs text-[#777]">
               <Tag className="w-3.5 h-3.5 text-[#c7a17a]" />
-              <span>Barista Theme Elementor Portfolio</span>
+              <span>Ali's Cafe Portfolio Showcase</span>
             </div>
           </div>
 

@@ -72,7 +72,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 ORDER RECEIVED!
               </h3>
               <p className="text-xs text-[#8c8c8c] font-sans max-w-xs mx-auto">
-                Your fresh artisan beans and coffee gear are being prepared by our barista roaster.
+                Your fresh artisan beans and coffee gear are being prepared by our Ali's Cafe team.
               </p>
             </div>
           ) : cartItems.length === 0 ? (

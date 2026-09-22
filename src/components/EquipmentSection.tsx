@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { EQUIPMENT_TABS } from '../data/baristaData';
+import { EQUIPMENT_TABS, getRandomStoredImage } from '../data/baristaData';
 import { Check } from 'lucide-react';
 
 export const EquipmentSection: React.FC = () => {
@@ -102,7 +102,7 @@ export const EquipmentSection: React.FC = () => {
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   const target = e.currentTarget as HTMLImageElement;
-                  target.src = 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=800&auto=format&fit=crop';
+                  target.src = getRandomStoredImage();
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

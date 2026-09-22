@@ -1,5 +1,5 @@
 import React from 'react';
-import { THREE_FEATURES } from '../data/baristaData';
+import { THREE_FEATURES, getRandomStoredImage } from '../data/baristaData';
 import { RippedPaperDivider } from './RippedPaperDivider';
 
 export const FeaturesSection: React.FC = () => {
@@ -40,7 +40,7 @@ export const FeaturesSection: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   onError={(e) => {
                     const target = e.currentTarget as HTMLImageElement;
-                    target.src = 'https://images.unsplash.com/photo-1509785307050-d4066910ec1e?q=80&w=800&auto=format&fit=crop';
+                    target.src = getRandomStoredImage();
                   }}
                 />
               </div>

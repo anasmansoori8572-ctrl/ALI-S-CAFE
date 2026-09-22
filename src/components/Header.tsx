@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({
         >
           <img
             src="https://aliscafe.in/loyalty/images/aliscafe.png"
-            alt="Barista Logo"
+            alt="Ali's Cafe Logo"
             className={`${
               isScrolled ? 'h-9 sm:h-11' : 'h-10 sm:h-13'
             } w-auto max-w-[160px] sm:max-w-[200px] object-contain drop-shadow-lg transition-all duration-300`}
@@ -196,7 +196,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="pb-3 flex items-center justify-between border-b border-white/10">
             <img
               src="https://aliscafe.in/loyalty/images/aliscafe.png"
-              alt="Barista Logo"
+              alt="Ali's Cafe Logo"
               className="h-10 w-auto object-contain"
             />
             <span className="font-oswald text-xs uppercase tracking-[0.2em] text-[#c7a17a]">

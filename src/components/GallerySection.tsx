@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GALLERY_ITEMS } from '../data/baristaData';
+import { GALLERY_ITEMS, getRandomStoredImage } from '../data/baristaData';
 import { GalleryItem } from '../types';
 import { Maximize2, ArrowRight } from 'lucide-react';
 
@@ -71,7 +71,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
                 className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                 onError={(e) => {
                   const target = e.currentTarget as HTMLImageElement;
-                  target.src = 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop';
+                  target.src = getRandomStoredImage();
                 }}
               />
 

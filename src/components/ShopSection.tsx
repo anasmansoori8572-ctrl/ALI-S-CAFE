@@ -1,5 +1,5 @@
 import React from 'react';
-import { PRODUCTS } from '../data/baristaData';
+import { PRODUCTS, getRandomStoredImage } from '../data/baristaData';
 import { ProductItem } from '../types';
 import { Star, ShoppingBag } from 'lucide-react';
 
@@ -21,7 +21,7 @@ export const ShopSection: React.FC<ShopSectionProps> = ({ onAddToCart }) => {
           </h2>
           <div className="w-16 h-[2px] bg-[#c7a17a] mx-auto mb-5" />
           <p className="text-[#8c8c8c] text-sm sm:text-base font-sans">
-            Take the Barista ritual home with our freshly roasted single-origin batches and custom ceramic accessories.
+            Take the Ali's Cafe ritual home with our freshly roasted single-origin batches and custom ceramic accessories.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export const ShopSection: React.FC<ShopSectionProps> = ({ onAddToCart }) => {
                   className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
                   onError={(e) => {
                     const target = e.currentTarget as HTMLImageElement;
-                    target.src = 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?q=80&w=400&auto=format&fit=crop';
+                    target.src = getRandomStoredImage();
                   }}
                 />
               </div>

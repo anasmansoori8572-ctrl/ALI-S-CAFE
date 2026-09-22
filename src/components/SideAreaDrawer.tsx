@@ -38,11 +38,11 @@ export const SideAreaDrawer: React.FC<SideAreaDrawerProps> = ({
             <div className="flex items-center space-x-3">
               <img
                 src="https://aliscafe.in/loyalty/images/aliscafe.png"
-                alt="Barista Logo"
+                alt="Ali's Cafe Logo"
                 className="h-11 sm:h-12 w-auto object-contain drop-shadow"
               />
               <span className="font-oswald text-xl font-bold tracking-[0.2em] text-white">
-                BARISTA
+                ALI'S CAFE
               </span>
             </div>
             <button
@@ -91,11 +91,11 @@ export const SideAreaDrawer: React.FC<SideAreaDrawerProps> = ({
           <div className="text-center py-6">
             <img
               src="https://aliscafe.in/loyalty/images/aliscafe.png"
-              alt="Barista Logo"
+              alt="Ali's Cafe Logo"
               className="h-24 sm:h-28 md:h-32 w-auto mx-auto mb-4 object-contain drop-shadow-xl"
             />
             <p className="text-xs text-[#8c8c8c] leading-relaxed font-sans">
-              Welcome to Barista. An authentic coffee shop offering fine roasted beans, slow manual brewing, and comforting spaces for connoisseurs.
+              Welcome to Ali's Cafe. An authentic coffee shop offering fine roasted beans, slow manual brewing, and comforting spaces for connoisseurs.
             </p>
           </div>
 

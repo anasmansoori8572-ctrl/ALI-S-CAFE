@@ -30,7 +30,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onShowToas
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
-      onShowToast('Thank you! Your message has been sent to our barista team.');
+      onShowToast('Thank you! Your message has been sent to our Ali\'s Cafe team.');
       setFormData({
         name: '',
         email: '',
@@ -115,7 +115,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onShowToas
                 SEND A MESSAGE
               </h2>
               <p className="text-xs sm:text-sm text-[#8c8c8c] font-sans leading-relaxed mb-8">
-                Have a question about our roastery, whole bean wholesale, or private events? Fill out the form and our head barista will reply within 24 hours.
+                Have a question about our roastery, whole bean wholesale, or private events? Fill out the form and our head roaster will reply within 24 hours.
               </p>
 
               {isSubmitted ? (
