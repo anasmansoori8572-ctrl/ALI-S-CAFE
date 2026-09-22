@@ -18,7 +18,6 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
 }) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [videoError, setVideoError] = useState(false);
   const videoRef = React.useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -56,30 +55,20 @@ export const HeroSlider: React.FC<HeroSliderProps> = ({
       onMouseLeave={() => setIsPaused(false)}
       className="relative w-full h-screen min-h-[700px] max-h-[1050px] overflow-hidden bg-[#141414] flex items-center justify-center select-none"
     >
-      {/* Background Video: public/videos/HeroVideo.mp4 with Image Fallback */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        {!videoError ? (
-          <video
-            ref={videoRef}
-            src="/videos/HeroVideo.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            onError={() => setVideoError(true)}
-            poster={currentSlide.image}
-            className="w-full h-full object-cover object-center scale-105"
-          >
-            <source src="/videos/HeroVideo.mp4" type="video/mp4" />
-          </video>
-        ) : (
-          <img
-            src={currentSlide.image}
-            alt={currentSlide.heading}
-            className="w-full h-full object-cover object-center"
-          />
-        )}
+      {/* Background Video: ONLY video, no background images */}
+      <div className="absolute inset-0 z-0 overflow-hidden bg-[#141414]">
+        <video
+          ref={videoRef}
+          src="/videos/HeroVideo.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="w-full h-full object-cover object-center scale-105"
+        >
+          <source src="/videos/HeroVideo.mp4" type="video/mp4" />
+        </video>
         {/* Subtle dark gradient overlay for optimal video visibility and typography contrast */}
         <div className="absolute inset-0 bg-black/20 pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none" />
